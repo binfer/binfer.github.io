@@ -3,29 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6585339-68e0-4633-80d0-d36d33ebf910" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/go/dial-sacnning-port/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/page/1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/me/avatar.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/me/wechat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor_gallery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor_main.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor_no_gallery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags/index.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
