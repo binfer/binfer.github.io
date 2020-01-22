@@ -9,9 +9,9 @@
   <meta name="description" content="smoke.mvp">
   <meta name="keywords" content="smoke">
   
-  <link rel="prev" href="/blog/other/hahaha-heiheihei-huhuhu-hohoho/" />
-  <link rel="next" href="/blog/go/package-build-safe-complete/" />
-  <link rel="canonical" href="/blog/linux/curl-time-use-sum/" />
+  <link rel="prev" href="/blog/me/release/" />
+  
+  <link rel="canonical" href="/blog/php/two-search-method/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Curl Time Use Sum | smoke
+           Two Search Method | smoke
        
   </title>
-  <meta name="title" content="Curl Time Use Sum | smoke">
+  <meta name="title" content="Two Search Method | smoke">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,21 +44,21 @@
          "@id": ""
     },
     "articleSection" : "blog",
-    "name" : "Curl Time Use Sum",
-    "headline" : "Curl Time Use Sum",
-    "description" : " 在开发过程中，有时候会需要对接口进行简单测速。这个接口可能是其它部门提供过来的，但是我们对于性能并不知情，需要进行下简单快速的测试，这里不是一个标准的性能测试流程。此刻，就非常需要一个工具来帮你做，而curl就是这么一个工具。 什么是curl? curl是linux下的一个命令行工具，业界更多称作它为下载工具，支持文件上传和下载，支持包括HTTP、HTTPS、FTP等众多协议，还支持POST、COOKIES、认证、从指定偏移处下载部分文件、用户代理、网络测速、文件大小、进度条等功能。 可以说它是一个非常有用的网络命令行工具。 利用curl简单接口测速 curl -s -w \x26#39;%{time_connect}:%{time_starttransfer}:%{time_total}\\n\x26#39; \x26#39;http:\/\/example.com\/api\/user\x26#39; # result 0.081:0.272:0.779 上面示例用curl对example.com的某个api进行测速，-s 参数去掉所有状态信息，-w 参数让 curl 写出列出的计时器的状态信息。 计时器参数： 参数\t一个普通标题 time_connect\t客户端建立服务器TCP连接用时 time_starttransfer\t发出请求后，服务器返回数据的第一个字节用时 time_total\t完成请求用时 time_namelookup\tDNS解析用时 speed_download\t下载速度，单位-字节每秒 通过观察curl数据及其随时间变化的趋势,可以很好地了解接口的响应速度。以上变量会按CURL认为合适的格式输出，输出变量需要按照%{variable_name}的格式，如果需要输出%，double一下即可，即%%，同时，\\n是换行，\\r是回车，\\t是TAB ",
+    "name" : "Two Search Method",
+    "headline" : "Two Search Method",
+    "description" : " private function sel($n) { $ls = range(1,999999); $min = 1; $max = count($ls); $mid = 0; $r = \x26#39;\x26#39;; while ($min\x26lt;$max) { $mid = intval(($min\x2b$max) \/ 2); switch ($ls[$mid]\x26lt;=\x26gt;$n) { case -1: $max = $mid-1; break; case 1: $max = $mid\x2b1; break; case 0: return $r = $ls[$mid]; break; } } return $r; } ",
     "inLanguage" : "en-us",
     "author" : "smoke",
     "creator" : "smoke",
     "publisher": "smoke",
     "accountablePerson" : "smoke",
     "copyrightHolder" : "smoke",
-    "copyrightYear" : "2019",
-    "datePublished": "2019-12-31 16:26:02 \x2b0800 CST",
-    "dateModified" : "2019-12-31 16:26:02 \x2b0800 CST",
-    "url" : "\/blog\/linux\/curl-time-use-sum\/",
-    "wordCount" : "32",
-    "keywords" : [ "linux", "smoke"]
+    "copyrightYear" : "2020",
+    "datePublished": "2020-01-22 12:39:26 \x2b0800 CST",
+    "dateModified" : "2020-01-22 12:39:26 \x2b0800 CST",
+    "url" : "\/blog\/php\/two-search-method\/",
+    "wordCount" : "54",
+    "keywords" : [ "php", "smoke"]
 }
 </script>
 
@@ -120,11 +120,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Curl Time Use Sum</h1>
+        <h1 class="post-title" itemprop="name headline">Two Search Method</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="" rel="author">smoke</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-12-31 itemprop="datePublished">December 31, 2019</time>
+                on <time datetime=2020-01-22 itemprop="datePublished">January 22, 2020</time>
                 </span>
                 in
                 
@@ -148,33 +148,31 @@
           
           
 
-          <h4 id="httpsimgshieldsiostaticv1labelsmokemessagecurl-time-use-sumcolorredstylefor-the-badgelogoappveyor"><img src="https://img.shields.io/static/v1?label=smoke&amp;message=%3CCurl-Time-Use-Sum%3E&amp;color=red&amp;style=for-the-badge&amp;logo=appveyor" alt="*"></h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">
-在开发过程中，有时候会需要对接口进行简单测速。这个接口可能是其它部门提供过来的，但是我们对于性能并不知情，需要进行下简单快速的测试，这里不是一个标准的性能测试流程。此刻，就非常需要一个工具来帮你做，而curl就是这么一个工具。
+          <h4 id="httpsimgshieldsiostaticv1labelsmokemessagetwo-search-methodcoloryellowgreenstylefor-the-badgelogoappveyorsuffixdownloadlinkhttpleftlinkhttpgooglecom"><img src="https://img.shields.io/static/v1?label=smoke&amp;message=%3CTwo-Search-Method%3E&amp;color=yellowgreen&amp;style=for-the-badge&amp;logo=appveyor&amp;suffix=download&amp;?link=http://left&amp;link=http://google.com" alt="*"></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
+ private function sel($n) {
+        $ls = range(1,999999);
+        $min = 1;
+        $max = count($ls);
+        $mid = 0;
+        $r   = &#39;&#39;;
+        while ($min<span style="color:#960050;background-color:#1e0010">&lt;</span>$max) {
+            $mid = intval(($min+$max) / 2);
 
-什么是curl?
-curl是linux下的一个命令行工具，业界更多称作它为下载工具，支持文件上传和下载，支持包括HTTP、HTTPS、FTP等众多协议，还支持POST、COOKIES、认证、从指定偏移处下载部分文件、用户代理、网络测速、文件大小、进度条等功能。
-
-可以说它是一个非常有用的网络命令行工具。
-
-利用curl简单接口测速
-curl -s -w &#39;%{time_connect}:%{time_starttransfer}:%{time_total}\n&#39; &#39;http://example.com/api/user&#39;
-
-# result 
-0.081:0.272:0.779
-上面示例用curl对example.com的某个api进行测速，-s 参数去掉所有状态信息，-w 参数让 curl 写出列出的计时器的状态信息。
-
-计时器参数：
-
-参数	一个普通标题
-time_connect	客户端建立服务器TCP连接用时
-time_starttransfer	发出请求后，服务器返回数据的第一个字节用时
-time_total	完成请求用时
-time_namelookup	DNS解析用时
-speed_download	下载速度，单位-字节每秒
-通过观察curl数据及其随时间变化的趋势,可以很好地了解接口的响应速度。以上变量会按CURL认为合适的格式输出，输出变量需要按照%{variable_name}的格式，如果需要输出%，double一下即可，即%%，同时，\n是换行，\r是回车，\t是TAB
-
-
+            switch ($ls[$mid]<span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt;$n) {
+                case -1:
+                    $max = $mid-1;
+                    break;
+                case 1:
+                    $max = $mid+1;
+                    break;
+                case 0:
+                    return $r = $ls[$mid];
+                    break;
+            }
+        }
+        return $r;
+    }
 
 </code></pre></div>
     </div>
@@ -190,7 +188,7 @@ speed_download	下载速度，单位-字节每秒
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=/blog/linux/curl-time-use-sum/>/blog/linux/curl-time-use-sum/</span>
+                    <a href=/blog/php/two-search-method/>/blog/php/two-search-method/</span>
             </p>
             
              
@@ -206,8 +204,8 @@ speed_download	下载速度，单位-字节每秒
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="tags/linux/">
-                    #linux</a></span>
+            <span class="tag"><a href="tags/php/">
+                    #php</a></span>
             
             </section>
         
@@ -219,10 +217,8 @@ speed_download	下载速度，单位-字节每秒
 
     <div class="post-nav">
         
-        <a href="/blog/other/hahaha-heiheihei-huhuhu-hohoho/" class="prev" rel="prev" title="Hahaha Heiheihei Huhuhu Hohoho"><i class="iconfont icon-left"></i>&nbsp;Hahaha Heiheihei Huhuhu Hohoho</a>
+        <a href="/blog/me/release/" class="prev" rel="prev" title="Release"><i class="iconfont icon-left"></i>&nbsp;Release</a>
          
-        
-        <a href="/blog/go/package-build-safe-complete/" class="next" rel="next" title="Package Build Safe Complete">Package Build Safe Complete&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
